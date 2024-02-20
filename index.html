@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Input Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+
+    input {
+      display: none;
+    }
+
+    .file-input-label {
+      background-color: #000000;
+      color: #fff;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      display: inline-block;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <label class="file-input-label"> 텍스트만 허용 (accept=".txt")<br>
+    <input type="file" accept=".txt">
+  </label>
+  <br>
+  <label class="file-input-label"> PNG 이미지만 허용 (accept=".png")<br>
+    <input type="file" accept=".png">
+  </label>
+  <br>
+  <label class="file-input-label"> JPG, JPGE 이미지만 허용 (accept=".jpg .jpeg")<br>
+    <input type="file" accept=".jpg .jpeg">
+  </label>
+  <br>
+  <label class="file-input-label"> 모든 파일 허용 (accept="*")<br>
+    <input type="file" accept="*">
+  </label>
+  <br>
+  <label class="file-input-label"> 모든 이미지 허용 (accept="image/*")<br>
+    <input type="file" accept="image/*">
+  </label>
+  <br>
+  <label class="file-input-label"> 모든 비디오 허용 (accept="video/*")<br>
+    <input type="file" accept="video/*">
+  </label>
+  <br>
+  <label class="file-input-label"> 모든 오디오 허용 (accept="audio/*")<br>
+    <input type="file" accept="audio/*">
+  </label>
+  <br>
+</body>
+
+</html>
